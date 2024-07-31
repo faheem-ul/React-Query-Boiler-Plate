@@ -1,7 +1,11 @@
 "use client"
 
+import Link from "next/link";
+
 import { useQuery } from "@tanstack/react-query";
+
 import axios from "axios";
+
 interface Post{
   userId: number;
   id: number;
@@ -33,12 +37,13 @@ export default function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    
+      <Link href="/Mutations">Navigate to Mutations Page</Link>
+        <h1 className="text-3xl font-bold" >Data fetched with the help of query from json placeholder</h1>
 {data?.slice(0,10).map((item, index)=>{
   return (
-    <div key={index} className="border-2 border-gray-200 p-4 my-4">
-      <h2>{item.id}</h2>
-      <p>{item.title}</p>
+    <div key={index} className="border-2 border-gray-200 p-4 my-4 w-[600px]">
+      <h2 className="text-center font-semibold text-2xl">{item.id}</h2>
+      <p className="text-center ">{item.title}</p>
     </div>
   )
   

@@ -1,0 +1,24 @@
+{
+  "Posts": [
+    {
+      "id": "1",
+      "name": "Person 1",
+      "email": "person1@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "person 2",
+      "email": "person2@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "person 3",
+      "email": "person3@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "Person 4",
+      "email": "person4@gmail.com"
+    }
+  ]
+}
